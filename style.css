@@ -25,7 +25,8 @@ body {
   display: none;
 }
 
-.rotate {
+.rotateUp {
+  transition: all 2s linear;
   transform: rotate(180deg);
 }
 
