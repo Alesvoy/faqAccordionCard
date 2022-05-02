@@ -45,7 +45,6 @@
   &__list {
     list-style: none;
     align-self: flex-start;
-    transition: all 0.5 ease-in;
   }
 
   &__titleBox {
@@ -53,6 +52,10 @@
     justify-content: space-between;
     align-items: center;
     height: 3.4rem;
+
+    & img {
+      transition: all 0.5s linear;
+    }
   }
 
   &__text {

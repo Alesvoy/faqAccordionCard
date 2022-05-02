@@ -26,23 +26,8 @@ body {
 }
 
 .rotateUp {
-  animation: rotate45Deg 1s forwards;
-  transition: all 1s linear;
-}
-@keyframes rotate45Deg {
-  100% {
-    transform: rotate(180deg);
-  }
-}
-
-.rotateDown {
-  animation: rotate45Deg 1s forwards;
-  transition: all 1s linear;
-}
-@keyframes rotate45Deg {
-  100% {
-    transform: rotate(-180deg);
-  }
+  transition: all 2s linear;
+  transform: rotate(180deg);
 }
 
 main {
@@ -95,13 +80,15 @@ main {
 .faq__list {
   list-style: none;
   align-self: flex-start;
-  transition: all 0.5 ease-in;
 }
 .faq__titleBox {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 3.4rem;
+}
+.faq__titleBox img {
+  transition: all 0.5s linear;
 }
 .faq__text {
   color: #787887;
