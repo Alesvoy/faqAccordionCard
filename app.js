@@ -10,19 +10,14 @@ for (let i = 0; i < listEl.children.length; i++) {
     textEl.classList.toggle('hide');
 
     if (open) {
-      boxEl.children[1].classList.remove('rotateUp');
-      boxEl.children[1].classList.add('rotateDown');
+      boxEl.children[1].classList.toggle('rotate');
+      boxEl.children[0].style.fontWeight = '400';
       open = false;
-      console.log(boxEl.children[1]);
       return;
     }
 
-    boxEl.children[1].classList.add('rotateUp');
-    boxEl.children[1].classList.remove('rotateDown');
+    boxEl.children[1].classList.toggle('rotate');
+    boxEl.children[0].style.fontWeight = '700';
     open = true;
-
-    console.log(boxEl.children[1]);
   });
-
-  console.log(listEl.children[i].children[1]);
 }
