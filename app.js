@@ -1,6 +1,6 @@
 const listEl = document.querySelector('.faq__list');
 
-for (let i = 0; i < listEl.children.length; i++) {
+for (let i = 1; i < listEl.children.length; i++) {
   const boxEl = listEl.children[i].children[0];
   const textEl = listEl.children[i].children[1];
 
@@ -21,3 +21,26 @@ for (let i = 0; i < listEl.children.length; i++) {
     open = true;
   });
 }
+
+let desktop = false;
+const boxImgEl = document.querySelector('.card__image--3');
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > '1440') {
+    if (desktop) {
+      return;
+    }
+
+    console.log('desktop');
+    boxImgEl.classList.toggle('hide');
+    desktop = true;
+  } else if (window.innerWidth < '1440') {
+    if (!desktop) {
+      return;
+    }
+
+    console.log('mobile');
+    boxImgEl.classList.toggle('hide');
+    desktop = false;
+  }
+});

@@ -35,7 +35,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 2.4rem;
+  position: relative;
   background: linear-gradient(to bottom, hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
 }
 
@@ -106,4 +106,64 @@ main {
 .faq__title:hover {
   cursor: pointer;
   color: #f37b56;
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 92rem;
+    min-height: 50.9rem;
+    flex-direction: row;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .card__image--1 {
+    content: url("../../images/illustration-woman-online-desktop.svg");
+    width: 47.2rem;
+    height: 35.9rem;
+    top: 7.1rem;
+    left: -8.2rem;
+    z-index: 1;
+  }
+  .card__image--2 {
+    content: url("../../images/bg-pattern-desktop.svg");
+    width: 96.4rem;
+    height: 94.4rem;
+    top: -30rem;
+    left: -57.3rem;
+    z-index: 0;
+  }
+  .card__image--3 {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    z-index: 2;
+    top: 45.8%;
+    left: 11.8%;
+  }
+  .card__content {
+    width: 50%;
+    margin: 0;
+    margin-right: 4.5rem;
+    padding: 4rem 0;
+  }
+  .card__title {
+    width: 35rem;
+    text-align: start;
+    margin-bottom: 4.3rem;
+  }
+
+  .faq__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .faq__item {
+    width: 35rem;
+  }
+  .faq__text {
+    font-size: 1.4rem;
+  }
+  .faq__title {
+    font-size: 1.4rem;
+  }
 }
