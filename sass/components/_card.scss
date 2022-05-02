@@ -1,0 +1,76 @@
+.card {
+  background: #fff;
+  border-radius: 3rem;
+  width: 32.7rem;
+  min-height: 53.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__image {
+    &--1 {
+      position: absolute;
+      width: 23.7rem;
+      height: 18rem;
+      left: 4.5rem;
+      top: -11rem;
+    }
+
+    &--2 {
+      position: absolute;
+      width: 24rem;
+      top: 0;
+    }
+  }
+
+  &__content {
+    width: 27.9rem;
+    height: auto;
+    text-align: center;
+    margin-bottom: 4.8rem;
+    margin-top: 13.2rem;
+  }
+
+  &__title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 3.8rem;
+  }
+}
+
+.faq {
+  &__list {
+    list-style: none;
+    align-self: flex-start;
+    transition: all 0.5 ease-in;
+  }
+
+  &__titleBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.4rem;
+  }
+
+  &__text {
+    color: #787887;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: start;
+    margin: 1.2rem 0;
+  }
+
+  &__title {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #4b4c5f;
+
+    &:hover {
+      cursor: pointer;
+      color: #f37b56;
+    }
+  }
+}

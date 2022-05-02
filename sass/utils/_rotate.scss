@@ -1,0 +1,21 @@
+.rotateUp {
+  animation: rotate45Deg 1s forwards;
+  transition: all 1s linear;
+
+  @keyframes rotate45Deg {
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.rotateDown {
+  animation: rotate45Deg 1s forwards;
+  transition: all 1s linear;
+
+  @keyframes rotate45Deg {
+    100% {
+      transform: rotate(-180deg);
+    }
+  }
+}
